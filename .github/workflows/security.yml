@@ -22,7 +22,7 @@ jobs:
   secrets: 
   # Un secret, c’est une information qui donne un accès ou un 
   # pouvoir à celui qui la possède : mot de passe, clé d’API, 
-  # clé de signature. Si elle fuit, quelqu’un d’autre peut agir à ta place
+  # clé de signature. Si elle fuit, quelqu’un d’autre peut agir a ma place
     name: Scanner de secrets (gitleaks)
     runs-on: ubuntu-latest
     steps:
