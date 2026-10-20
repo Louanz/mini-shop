@@ -14,3 +14,5 @@ echo "tests : $LASTEXITCODE"      # attendu : 0
 
 npm audit --audit-level=high
 echo "audit : $LASTEXITCODE"      # attendu : 1
+
+npm audit fix --force
