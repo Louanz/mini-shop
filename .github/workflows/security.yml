@@ -3,6 +3,8 @@ name: Pipeline de sécurité
 on:
   push:
   pull_request:
+  # demande de fusion
+  
 
 jobs:
   tests:
