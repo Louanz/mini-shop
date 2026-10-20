@@ -3,18 +3,17 @@ version: 2
 
 updates:
 
-  # 1) Dépendances npm (celles de package.json / package-lock.json)
+  # Dépendances npm (celles de package.json / package-lock.json)
   
   - package-ecosystem: "npm"
-    directory: "/"                  # dossier où se trouve package.json
+    directory: "/"                  
     schedule:
-      interval: "weekly"            # vérification une fois par semaine
-    open-pull-requests-limit: 5     # au plus 5 PR ouvertes en même temps
+      interval: "weekly"            
+    open-pull-requests-limit: 5     
     commit-message:
-      prefix: "deps"                # les commits commencent par "deps: ..."
-
+      prefix: "deps"                
   - package-ecosystem: "github-actions"
-    directory: "/"                  # Dependabot lit alors .github/workflows/
+    directory: "/"                  
     schedule:
       interval: "weekly"
     commit-message:
